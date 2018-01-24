@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE plugin SYSTEM "manifest.dtd">
+<plugin version="2">
+	<info>
+		<version>1.0</version>
+		<name>refreshbutton</name>
+		<title>Refresh Button Plugin</title>
+		<author>Martijn Alberts</author>
+		<authorURL>https://github.com/MartyJustice/</authorURL>
+		<description>Creates a refresh button to refresh the store and grid</description>
+	</info>
+	<config>
+		<configfile>config.php</configfile>
+	</config>
+	<components>
+		<component>
+			<files>
+				<server>
+					<serverfile>php/plugin.refreshbutton.php</serverfile>
+				</server>
+				<client>
+					<clientfile load="release">js/refreshbutton.js</clientfile>
+					<clientfile load="debug">js/refreshbutton.js</clientfile>
+					<clientfile load="source">js/refreshbutton.js</clientfile>
+				</client>
+				<resources>
+					<resourcefile load="release">css/refreshbutton.css</resourcefile>
+					<resourcefile load="debug">css/refreshbutton.css</resourcefile>
+					<resourcefile load="source">css/refreshbutton.css</resourcefile>
+				</resources>
+			</files>
+		</component>
+	</components>
+</plugin>
